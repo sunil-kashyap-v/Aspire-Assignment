@@ -21,7 +21,7 @@ class ApplyLoanRequest extends FormRequest
     {
         return [
             'amount' => 'required',
-            'tenure' => 'required'
+            'tenure' => 'required|numeric'
         ];
     }
 

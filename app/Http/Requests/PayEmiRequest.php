@@ -20,9 +20,9 @@ class PayEmiRequest extends FormRequest
     public function rules()
     {
         return [
-            'loan_id' => 'required',
+            'loan_id' => 'required|numeric',
             'amount' => 'required',
-            'date' => 'required'
+            'date' => 'required|date_format:Y-m-d'
         ];
     }
 
